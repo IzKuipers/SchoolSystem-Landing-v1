@@ -7,19 +7,20 @@
   <p class="text">
     Toen het einde van mijn leerjaar 3 eraan zat te komen in juni 2022 merkte ik
     dat overzicht houden over alles wat er nog moest gebeuren niet makkelijk
-    was. Ik verzon een oplossing: een excel document waarin ik al mijn
-    opdrachten in een opzicht kon weergeven met notities, cijfers, alles in een.
-    Ik deelde dit document met mijn twee mentoren zodat hun een actief beeld
-    konden houden op de voortgang van mijn schooljaar-afronding. Toen alle
-    opdrachten uiteindelijk af waren gerond zag mijn mentor hier potentieel in.
-    Hij zette in magister voor de volgende mentor dat ik dat excel document
-    volgend schooljaar weer moest gebruiken. Ik vond mijn excel echter een
+    was. Ik bedacht een oplossing: een Excel document waarin ik al mijn
+    opdrachten in een oog opzicht kon weergeven met notities, cijfers, alles in
+    een. En het werkte perfect! Ik deelde dit document met mijn twee mentoren
+    zodat hun een actief beeld hadden op de voortgang van de afronding van mijn
+    schooljaar. Toen alle opdrachten uiteindelijk af waren gerond zag mijn
+    mentor potentieel in dit Excel document. Hij liet mijn toekomstige mentor in
+    magister weten dat ik datzelfde Excel document volgend schooljaar weer moest
+    gebruiken. Ik vond het - op dat punt rommelige - Excel document echter een
     tijdelijke oplossing en zag het niet als gebruiksmiddel voor meerdere
     schooljaren.<br /><br />Dus begon ik te denken. Ik wou een minimalistisch,
-    overzichtelijk systeem maken waarin ik op een oog opzicht kon zien welke
-    opdrachten al af zijn en welke ik nog moet doen. Ik bedacht hierdoor het
-    SOS. Het SOS is bedoeld om verduideliking te geven omtrent je
-    schoolopdrachten en PTA’s.
+    overzichtelijk systeem maken waarin ik in een keer kon zien welke opdrachten
+    al af zijn en welke ik nog moet doen. Ik bedacht hiervoor het SOS. Het SOS
+    is bedoeld om verduideliking te geven omtrent je schoolopdrachten en PTA’s.<br
+    /><br />Dit zijn de drie belangrijkste onderdelen van het SOS:
   </p>
   <div class="features">
     <div class="feature">
@@ -34,10 +35,10 @@
     </div>
     <div class="feature">
       <div class="icon material-icons clr-aqua">remove_red_eye</div>
-      <p class="header">Overzichtelijk</p>
+      <p class="header">Overzichtelijkheid</p>
       <p class="capt">
         Het ontwerp is gemaakt met overzicht in gedachten. Je opdrachten zijn
-        duidelijk weergegeven zonder interrupties
+        duidelijk weergegeven zonder interrupties.
       </p>
     </div>
     <div class="feature">
@@ -49,24 +50,40 @@
       </p>
     </div>
   </div>
+  <p class="text">
+    Er is veel meer functionaliteit in het SOS die niet op deze pagina zal
+    passen. Deze functionaliteit kan je vinden door rechts bovenin op het
+    handleiding-icoontje te klikken. (opent in nieuw tabblad)
+  </p>
+  <div class="footer">
+    <p>
+      Ontwikkeld door I. Z. Kuipers. Rechten verleend zoals beschreven in de
+      <a
+        href="https://www.gnu.org/licenses/gpl-3.0-standalone.html"
+        target="_blank">GPLv3</a
+      > licentie.
+    </p>
+  </div>
 </div>
 
 <style scoped>
   .content {
     position: fixed;
-    /*     top: 50px;
+    top: 50px;
     left: 0px;
     width: 100%;
-    height: calc(100% - 50px); */
+    height: calc(100% - 50px);
     box-sizing: border-box;
     padding: 20px;
-    top: 50%;
+    /*     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -o-ransform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%); */
+    overflow-y: scroll;
+    background-color: #fff;
   }
 
   .content h1.header {
@@ -89,8 +106,7 @@
     width: 900px;
     display: grid;
     grid-template-columns: 300px 300px 300px;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin: 40px auto;
   }
 
   .features .feature {
@@ -132,4 +148,28 @@
   /* .features .feature {
     display: inline-gr;
   } */
+
+  div.footer {
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+  }
+
+  div.footer p {
+    margin: 0;
+    display: inline-block;
+  }
+
+  a {
+    color: deepskyblue;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
 </style>

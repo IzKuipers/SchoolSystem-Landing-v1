@@ -45,6 +45,15 @@
     height: 30px;
     vertical-align: middle;
     padding: 0 5px;
+    transition: opacity 0.2s;
+  }
+
+  button:hover {
+    opacity: 0.7;
+  }
+
+  button:active {
+    opacity: 0.4;
   }
 
   button.material-icons {

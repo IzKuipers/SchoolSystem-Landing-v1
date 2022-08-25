@@ -5,8 +5,7 @@
   import { showDetails } from "./ts/env";
 </script>
 
-{#if !$showDetails}
-  <Main />
-{:else}
+<Main />
+{#if $showDetails}
   <Details />
 {/if}

@@ -42,7 +42,7 @@
     en/of leerlingen op de Jozefmavo. Mooi! dan weet je al wat het is en wat het
     doet.<br />
     <br />
-    Waar wacht je nog op? Neem een kijkje voor jezelf...
+    En? Kies ook jij voor een overzichtelijk schooljaar?
   </p>
   <div class="buttons">
     {#if release}
@@ -86,6 +86,7 @@
 
   p.text {
     margin-bottom: 50px;
+    min-width: 640px;
   }
 
   p.subheader {
