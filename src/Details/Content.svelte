@@ -172,4 +172,21 @@
   a:active {
     text-decoration: underline;
   }
+
+  @media screen and (max-width: 950px) {
+    p.text {
+      min-width: unset !important;
+      width: unset !important;
+    }
+
+    .features {
+      display: block;
+      width: unset;
+    }
+
+    .features .feature {
+      width: 100%;
+      display: block;
+    }
+  }
 </style>

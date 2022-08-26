@@ -34,15 +34,11 @@
   </p>
   <p class="text">
     Het SOS is ontworpen om jou te helpen met het bijhouden van je
-    schoolopdrachten.<br />
-    Het heeft integratie met Zermelo, PTA ondersteuning, en andere tools die jou
-    zullen<br />
-    helpen in je reis naar je diploma. Je hebt misschien al over het SOS gehoord
-    via docenten<br />
-    en/of leerlingen op de Jozefmavo. Mooi! dan weet je al wat het is en wat het
-    doet.<br />
-    <br />
-    En? Kies ook jij voor een overzichtelijk schooljaar?
+    schoolopdrachten. Het heeft integratie met Zermelo, PTA ondersteuning, en
+    andere tools die jou zullen helpen in je reis naar je diploma. Je hebt
+    misschien al over het SOS gehoord via docenten en/of leerlingen op de
+    Jozefmavo. Mooi! dan weet je al wat het is en wat het doet.<br /><br />En?
+    Kies ook jij voor een overzichtelijk schooljaar?
   </p>
   <div class="buttons">
     {#if release}
@@ -73,6 +69,7 @@
     -ms-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+    padding: 0 2em;
   }
 
   p {
@@ -87,6 +84,41 @@
   p.text {
     margin-bottom: 50px;
     min-width: 640px;
+  }
+
+  @media screen and (max-width: 700px) {
+    p.text {
+      min-width: unset;
+    }
+
+    p {
+      text-align: left;
+      line-height: 20px;
+    }
+
+    .header {
+      margin-bottom: 30px !important;
+    }
+
+    p.subheader {
+      margin-bottom: 10px;
+    }
+
+    .buttons button {
+      margin: 0;
+      margin-bottom: 10px;
+      display: block;
+      width: 100%;
+    }
+
+    .content {
+      left: 0;
+      transform: translateY(-50%);
+      -o-ransform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+    }
   }
 
   p.subheader {
