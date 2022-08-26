@@ -8,19 +8,21 @@
     Toen het einde van mijn leerjaar 3 eraan zat te komen in juni 2022 merkte ik
     dat overzicht houden over alles wat er nog moest gebeuren niet makkelijk
     was. Ik bedacht een oplossing: een Excel document waarin ik al mijn
-    opdrachten in een oog opzicht kon weergeven met notities, cijfers, alles in
-    een. En het werkte perfect! Ik deelde dit document met mijn twee mentoren
-    zodat hun een actief beeld hadden op de voortgang van de afronding van mijn
-    schooljaar. Toen alle opdrachten uiteindelijk af waren gerond zag mijn
-    mentor potentieel in dit Excel document. Hij liet mijn toekomstige mentor in
-    magister weten dat ik datzelfde Excel document volgend schooljaar weer moest
-    gebruiken. Ik vond het - op dat punt rommelige - Excel document echter een
-    tijdelijke oplossing en zag het niet als gebruiksmiddel voor meerdere
-    schooljaren.<br /><br />Dus begon ik te denken. Ik wou een minimalistisch,
-    overzichtelijk systeem maken waarin ik in een keer kon zien welke opdrachten
-    al af zijn en welke ik nog moet doen. Ik bedacht hiervoor het SOS. Het SOS
-    is bedoeld om verduideliking te geven omtrent je schoolopdrachten en PTA’s.<br
-    /><br />Dit zijn de drie belangrijkste onderdelen van het SOS:
+    opdrachten in een oogopzicht kon weergeven met notities, cijfers, alles in
+    één. En het werkte perfect! Ik deelde dit document met mijn twee mentoren
+    zodat zij een actief beeld hadden op de voortgang van de afronding van mijn
+    schooljaar. Toen alle opdrachten uiteindelijk waren afgerond zag mijn mentor
+    hoe goed het Excel document had gewerkt. Hij liet mijn toekomstige mentor in
+    Magister weten dat ik datzelfde Excel document volgend schooljaar weer moest
+    gebruiken. Ik vond het Excel document echter een tijdelijke oplossing en zag
+    het niet als gebruiksmiddel voor meerdere schooljaren.<br /><br />Dus begon
+    ik te denken. Ik wou een minimalistisch en overzichtelijk systeem maken
+    waarin ik kon zien welke opdrachten al af waren en welke ik nog moest doen.
+    Ik bedacht hiervoor het SOS. Het SOS is bedoeld om jou overzicht te geven
+    over je schoolopdrachten en PTA’s. Je ziet in het SOS in één net overzicht,
+    alle opdrachten die je hebt ingeschreven met het cijfer, de status, de
+    inleverdatum en deadline, en de status over hoever de opdracht klaar is.
+    <br /><br />Dit zijn de drie belangrijkste onderdelen van het SOS:
   </p>
   <div class="features">
     <div class="feature">
@@ -30,7 +32,7 @@
       <p class="header">Zermelo Integratie</p>
       <p class="capt">
         Zie je rooster met uitval, verplaatsingen, je opdrachten en meer, direct
-        vanuit het SOS.
+        in het SOS.
       </p>
     </div>
     <div class="feature">

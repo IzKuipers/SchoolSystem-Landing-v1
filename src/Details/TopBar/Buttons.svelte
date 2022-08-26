@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { onMount } from "svelte";
+
   import { showDetails } from "../../ts/env";
 
   function B() {
@@ -20,6 +22,12 @@
 
     window.open(release.assets[0].browser_download_url, "_blank");
   }
+
+  let noWindows = false;
+
+  onMount(() => {
+    noWindows = !navigator.userAgent.includes("Windows");
+  });
 </script>
 
 <div class="buttons">
@@ -27,7 +35,7 @@
     >arrow_back_ios_new</button
   >
   <button class="material-icons clr-blue" on:click={M}>menu_book</button>
-  <button class="clr-green" on:click={D}>
+  <button class="clr-green" on:click={D} disabled={noWindows}>
     <span class="material-icons">download</span> Downloaden
   </button>
 </div>
@@ -54,6 +62,10 @@
 
   button:active {
     opacity: 0.4;
+  }
+
+  button:disabled {
+    opacity: 0.5;
   }
 
   button.material-icons {

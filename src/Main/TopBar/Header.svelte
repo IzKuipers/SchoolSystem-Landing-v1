@@ -22,4 +22,10 @@
     display: inline-block;
     vertical-align: middle;
   }
+
+  @media screen and (max-width: 500px) {
+    .header .title {
+      display: none;
+    }
+  }
 </style>

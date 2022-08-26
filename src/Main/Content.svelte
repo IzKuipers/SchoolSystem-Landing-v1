@@ -3,6 +3,7 @@
   import { showDetails } from "../ts/env";
 
   let release: GitHubRelease;
+  let noWindows = false;
 
   const repo = "IzKuipers/SchoolSystem-Release-Channel";
 
@@ -25,6 +26,10 @@
   function M() {
     showDetails.set(true);
   }
+
+  onMount(() => {
+    noWindows = !navigator.userAgent.includes("Windows");
+  });
 </script>
 
 <div class="content">
@@ -33,18 +38,22 @@
     Vind je het lastig om overzicht te houden over alle opdrachten en PTA's?
   </p>
   <p class="text">
-    Het SOS is ontworpen om jou te helpen met het bijhouden van je
-    schoolopdrachten. Het heeft integratie met Zermelo, PTA ondersteuning, en
-    andere tools die jou zullen helpen in je reis naar je diploma. Je hebt
-    misschien al over het SOS gehoord via docenten en/of leerlingen op de
-    Jozefmavo. Mooi! dan weet je al wat het is en wat het doet.<br /><br />En?
-    Kies ook jij voor een overzichtelijk schooljaar?
+    Het School Opdrachten Systeem is ontworpen om jou te helpen met het
+    bijhouden van je schoolopdrachten. Het integreert met Zermelo, heeft PTA
+    ondersteuning en andere hulpmiddelen die jou zullen helpen in je reis naar
+    je diploma. Je hebt misschien al over het SOS gehoord via docenten en/of
+    leerlingen op de Jozefmavo. Mooi! dan weet je al wat het is en wat het doet.<br
+    />
+    <br />
+    En? Kies óók jij voor een overzichtelijk schooljaar?
   </p>
   <div class="buttons">
     {#if release}
-      <button class="clr-green" disabled={!release} on:click={D}
-        >Download{release ? ` v${release.tag_name}` : `en`}</button
-      >
+      <button class="clr-green" disabled={!release || noWindows} on:click={D}>
+        {noWindows
+          ? "Downloaden kan op Windows"
+          : `Download${release ? ` v${release.tag_name}` : `en`}`}
+      </button>
       <button class="clr-blue" on:click={M}>Meer informatie</button><br />
     {/if}
   </div>
@@ -108,7 +117,29 @@
       margin: 0;
       margin-bottom: 10px;
       display: block;
-      width: 100%;
+      width: 100% !important;
+      text-align: left;
+      padding: 15px 20px;
+      position: relative;
+      font-size: 14px;
+    }
+
+    .buttons button::after {
+      content: "arrow_forward_ios";
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 15px;
+      font-family: "Material Icons";
+      display: block;
+      width: 10px;
+      height: 10px;
+    }
+
+    .buttons {
+      width: 100% !important;
+      margin: 0 !important;
+      display: block;
     }
 
     .content {

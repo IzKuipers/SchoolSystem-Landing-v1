@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { onMount } from "svelte/types/runtime/internal/lifecycle";
+
   import Buttons from "./TopBar/Buttons.svelte";
   import Header from "./TopBar/Header.svelte";
 </script>
