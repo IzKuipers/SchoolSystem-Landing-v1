@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
-  import { showDetails } from "../ts/env";
+  import { downloading, showDetails } from "../ts/env";
 
   let release: GitHubRelease;
   let noWindows = false;
@@ -19,7 +19,10 @@
 
   function D() {
     if (release) {
-      window.open(release.assets[0].browser_download_url, "_blank");
+      $downloading = true;
+      setTimeout(() => {
+        window.open(release.assets[0].browser_download_url, "_blank");
+      }, 100);
     }
   }
 

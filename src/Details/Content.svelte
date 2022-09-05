@@ -1,8 +1,9 @@
 <script lang="ts">
   import zermelo from "../assets/zermelo.png";
+  import { showDetails } from "../ts/env";
 </script>
 
-<div class="content">
+<div class="content" class:show={$showDetails}>
   <h1 class="header">Oorsprong van het SOS</h1>
   <p class="text">
     Toen het einde van mijn leerjaar 3 eraan zat te komen in juni 2022 merkte ik
@@ -86,6 +87,17 @@
     -webkit-transform: translate(-50%, -50%); */
     overflow-y: scroll;
     background-color: #fff;
+    margin-top: 30px;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: visibility 0.3s, opacity 0.3s, margin-top 0.3s;
+  }
+
+  .content.show {
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
   }
 
   .content h1.header {
